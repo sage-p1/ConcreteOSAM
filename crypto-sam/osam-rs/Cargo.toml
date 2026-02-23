@@ -1,0 +1,21 @@
+[package]
+name = "osam_rust_backend"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "osam_rust_backend"
+crate-type = ["cdylib"]
+
+[dependencies]
+criterion = "0.8.1"
+oram = { git = "https://github.com/anon/oram"} 
+pyo3 = { version = "0.21.2", features = ["extension-module"] }
+rand = "0.8"
+
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg=-undefined", "-C", "link-arg=dynamic_lookup"]
+
+[[bench]]
+name = "bench"
+harness = false
