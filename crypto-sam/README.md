@@ -1,6 +1,6 @@
 
 # Cryptographic OSAM
-A bridge between a stripped-down fork of facebook/oram-rs and a Python implementation of OSAM. The fork keeps only the cryptographic position map logic, discarding everything else. The Python side handles OSAM operations without its own crypto. Together, they let you run OSAM operations in Python backed by a fast Rust cryptographic implementation.
+A bridge between a stripped-down fork of Facebook's ORAM implementation and a Python implementation of OSAM. The fork keeps only the cryptographic position map logic, discarding everything else. The Python side handles OSAM operations without its own crypto. Together, they let you run OSAM operations in Python backed by a fast Rust cryptographic implementation.
 
 All standard ORAM features are disabled since the goal here is purely to evaluate and time OSAM operations.
 
