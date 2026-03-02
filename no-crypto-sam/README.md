@@ -24,11 +24,11 @@ Oblivious RAM (Random Access Machines) are constructions designed to obscure the
 
 If `a` was not allocated, then `Write()` and `Read()` both throw errors. If `a` was allocated but not written to, `Read(a)` returns `None`. ORAM allow the same address to be read from and written to multiple times.
 
-ORAM are measured in three categories: bandwidth blowup, client storage, roundtrips to the server. For any ORAM, it is impossible to simultaneously achieve small bandwidth blowup, client storage, and a single roundtrip. 
+ORAM are measured in three categories: bandwidth blowup, client storage, roundtrips to the server. 
 
 ### Oblivious SAM
 
-Appan et al. consider the weaker SAM (Single Access Machine) model. SAM supports the same operations (`Alloc()`, `Read()`, `Write()`) as RAM with the additional limit that addresses can be written to and read from at most once. Despite being less powerful, this restriction allows Oblivious SAM to enjoy small bandwidth blowup, small client storage, and few roundtrips. Additionally, this framework allow Appan et al. to provide an oblivious and efficient library of common data structures and algorithms.
+Appan et al. consider the weaker SAM (Single Access Machine) model. SAM supports the same operations (`Alloc()`, `Read()`, `Write()`) as RAM with the additional limit that addresses can be written to and read from at most once. Despite being less powerful, this restriction allows Oblivious SAM to enjoy better performance than traditional ORAM for certain data structures. Towards this Appan et al. provide an oblivious library of some common data structures and algorithms.
   
 ### Oblivious SAM+
 
