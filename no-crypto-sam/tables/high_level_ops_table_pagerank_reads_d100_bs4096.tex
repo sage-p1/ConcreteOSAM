@@ -1,0 +1,50 @@
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+RecursivePointer & 6615 & 6612 & 6657 & 6567 & 6573 & 6603 & 6585 & 6555 & 6570 & 6618 & 6609 \\ \hline
+SmartAVLTree & 1813 & 2080 & 2383 & 2893 & 3151 & 3458 & 3769 & 4215 & 4505 & 4531 & 4870 \\ \hline
+SmartQueue & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\caption{PageRank of length $50$ with pointer architecture recursive-True, damping factor $0.9$, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+AddressQueue & 529434 & 533219 & 525804 & 520367 & 517854 & 518730 & 529337 & 526170 & 528518 & 531257 & 532064 \\ \hline
+SmartAVLTree & 1813 & 2080 & 2383 & 2893 & 3151 & 3458 & 3769 & 4215 & 4505 & 4531 & 4870 \\ \hline
+SmartPointerOriginal & 247861 & 253588 & 251383 & 249331 & 248537 & 248817 & 254391 & 252689 & 253826 & 254940 & 255523 \\ \hline
+SmartQueue & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\caption{PageRank of length $50$ with pointer architecture original-True, damping factor $0.9$, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+AddressQueue & 1388247 & 1398680 & 1410678 & 1391185 & 1391635 & 1397872 & 1402534 & 1395199 & 1395208 & 1400898 & 1408144 \\ \hline
+SmartAVLTree & 1813 & 2080 & 2383 & 2893 & 3151 & 3458 & 3769 & 4215 & 4505 & 4531 & 4870 \\ \hline
+SmartPointerOriginal & 570689 & 577217 & 582642 & 575066 & 575581 & 578126 & 580678 & 577557 & 577712 & 579940 & 583016 \\ \hline
+SmartQueue & 2205 & 2204 & 2219 & 2189 & 2191 & 2201 & 2195 & 2185 & 2190 & 2206 & 2203 \\ \hline
+\end{tabular}
+\caption{PageRank of length $50$ with pointer architecture original-False, damping factor $0.9$, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+SmartAVLTree & 1813 & 2080 & 2383 & 2893 & 3151 & 3458 & 3769 & 4215 & 4505 & 4531 & 4870 \\ \hline
+SmartPointerMultiWrite & 39158 & 41028 & 43545 & 46324 & 47546 & 48631 & 50054 & 50405 & 50630 & 50601 & 50816 \\ \hline
+SmartQueue & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\caption{PageRank of length $50$ with pointer architecture multiwrite-True, damping factor $0.9$, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+

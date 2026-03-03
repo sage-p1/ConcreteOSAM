@@ -1,0 +1,29 @@
+----- Running test: ER_n256_d20_multiwrite_semanticsTrue_bs64_cd_primeTrue_copiesFalse -----
+
+Class Graph ER_n256_d20_multiwrite_semanticsTrue_bs64_cd_primeTrue_copiesFalse
+
+Allocs, Reads, Read/Rem, Writes
+Pre build stats (0, 0, 0, 0)
+Post build stats (61799, 43227, 43227, 85990)
+High level operations: SmartAVLTree (4334, 3822, 3822, 4334)
+High level operations: SmartPointerMultiWrite (50165, 32617, 32617, 74868)
+High level operations: SmartQueue (7300, 6788, 6788, 6788)
+
+Max write batches: 42764
+
+--------------------------------------------------------------
+Benchmarking Graph ER_n256_d20_multiwrite_semanticsTrue_bs64_cd_primeTrue_copiesFalse
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 2599, 21, 1, 8.44)
+
+Post algorithm contact discovery stats (69399, 50727, 50727, 94234)
+High level operations: SmartAVLTree (5792, 5280, 5280, 5792)
+High level operations: SmartPointerMultiWrite (53608, 36060, 36060, 79055)
+High level operations: SmartQueue (9999, 9387, 9387, 9387)
+
+Max write batches: 769
+
+----- Finished test: ER_n256_d20_multiwrite_semanticsTrue_bs64_cd_primeTrue_copiesFalse -----
+

@@ -1,0 +1,29 @@
+----- Running test: ER_n256_d20_recursive_semanticsTrue_bs4096_cd_primeTrue_copiesFalse -----
+
+Class Graph ER_n256_d20_recursive_semanticsTrue_bs4096_cd_primeTrue_copiesFalse
+
+Allocs, Reads, Read/Rem, Writes
+Pre build stats (0, 0, 0, 0)
+Post build stats (6021, 13080, 13080, 15350)
+High level operations: RecursivePointer (2831, 4006, 4006, 5764)
+High level operations: SmartAVLTree (488, 3822, 3822, 4334)
+High level operations: SmartQueue (2702, 5252, 5252, 5252)
+
+Max write batches: 6020
+
+--------------------------------------------------------------
+Benchmarking Graph ER_n256_d20_recursive_semanticsTrue_bs4096_cd_primeTrue_copiesFalse
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 1999, 21, 1, 0.0)
+
+Post algorithm contact discovery stats (6053, 18636, 18636, 18807)
+High level operations: RecursivePointer (2831, 6105, 6105, 5764)
+High level operations: SmartAVLTree (488, 5280, 5280, 5792)
+High level operations: SmartQueue (2734, 7251, 7251, 7251)
+
+Max write batches: 32
+
+----- Finished test: ER_n256_d20_recursive_semanticsTrue_bs4096_cd_primeTrue_copiesFalse -----
+

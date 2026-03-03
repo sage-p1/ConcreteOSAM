@@ -39,19 +39,11 @@ class experimental_config:
             
             for function in list(self.algo_allocs.keys()):
                 if "SmartAVLTree" in high_level_allocs[function]:
-                    if n == 2048 and d == 20 and bs == 64 and pointer == 'recursive':
-                        print("??", function, self.high_level_allocs[function]["SmartAVLTree"])
                     self.total_allocs -= self.high_level_allocs[function]["SmartAVLTree"]
 
             recursion_base = self.bs/8
             self.recursion_levels = log(self.total_allocs, recursion_base)
 
-            if n == 2048 and d == 20 and bs == 64 and pointer == 'recursive':
-                print("total", self.total_allocs, pointer)
-                for k, v in algo_allocs.items():
-                    print(k, v)
-                print("RL", self.recursion_levels)
-            
             if self.bs == 4096:
                 self.recursion_levels = ceil(max(self.recursion_levels-1, 1))
             else:
@@ -60,13 +52,15 @@ class experimental_config:
             for function in list(self.algo_reads.keys()):
                 if "SmartAVLTree" in high_level_reads[function]:
                     self.algo_reads[function] = (self.algo_reads[function] - self.high_level_reads[function]["SmartAVLTree"])*self.recursion_levels + self.high_level_reads[function]["SmartAVLTree"]
-                    if n == 2048 and d == 20 and bs == 64 and pointer == 'recursive':
-                        print("AVL", function, self.algo_reads[function], self.high_level_reads[function]["SmartAVLTree"])    
-                        print("AFTER", self.algo_reads[function])
                 else:
                     self.algo_reads[function] *= (self.recursion_levels)
 
             print("recursion levels (recursive):", self.recursion_levels, self.bs, self.total_allocs, self.d, self.n)
+
+        # average over 50 trials
+        for fn in self.algo_reads.keys():
+            if fn != "build":
+                self.algo_reads[fn] /= 50
             
     def __hash__(self):
         return hash((self.n, self.d, self.pointer, self.move_semantics, self.bs))
@@ -406,7 +400,7 @@ def generate_tables(d, bs, high_level_results, functions, powers, directory=None
 def generate_plots(d, bs, experimental_results, functions, directory=None):
     functions['build'] = 'build'
     for function in functions.values():
-        file = f"log2n_vs_{function}_reads_d"+str(d)+"_bs"+str(bs)+".pgf"
+        file = f"log2n_vs_{function}_reads_d"+str(d)+"_bs"+str(bs)+".tex"
         if type(directory) is str:
             if not os.path.exists(f'{directory}'):
                 os.mkdir(f'{directory}')
@@ -431,8 +425,6 @@ def generate_plots(d, bs, experimental_results, functions, directory=None):
                     if result.d == d and result.bs == bs and result.pointer == pointer.split('-')[0] and str(result.move_semantics) == pointer.split('-')[1]:
                         log2n = log(result.n, 2)
                         algo_reads = result.algo_reads[function]
-                        if result.n == 2048 and d == 20 and bs == 64 and result.pointer == 'recursive':
-                            print("HEY THERE", function, algo_reads)
                         reads = round(log(algo_reads, 2), 2)
                         pgf_file.write(f"({log2n}, {reads})\n")
                 pgf_file.write("};\n")
@@ -467,7 +459,7 @@ def generate_figures(functions, block_sizes, degrees, prime_graph, make_copies):
                     f.write('\n')
                     f.write(r"    \begin{subfigure}{0.75\textwidth}" + '\n')
                     f.write(r"        \centering" + '\n')
-                    f.write(r"        \resizebox{\linewidth}{!}{\input{Figures/log2n_vs_" + function + r"_reads_d" + f"{d}" + r"_bs" + f"{bs}" + r".pgf}}" + '\n')
+                    f.write(r"        \resizebox{\linewidth}{!}{\input{Figures/log2n_vs_" + function + r"_reads_d" + f"{d}" + r"_bs" + f"{bs}" + r".tex}}" + '\n')
                     f.write(r"        \caption{$d=" + f"{d}" + r"$}" + '\n')
                     f.write(r"    \end{subfigure}" + '\n')
                     

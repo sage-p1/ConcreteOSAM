@@ -1,0 +1,31 @@
+----- Running test: ER_n32768_d20_original_semanticsTrue_bs64_cd_primeTrue_copiesFalse -----
+
+Class Graph ER_n32768_d20_original_semanticsTrue_bs64_cd_primeTrue_copiesFalse
+
+Allocs, Reads, Read/Rem, Writes
+Pre build stats (0, 0, 0, 0)
+Post build stats (33167292, 22355875, 22355875, 24511590)
+High level operations: AddressQueue (23247704, 14073460, 14073460, 14657529)
+High level operations: SmartAVLTree (1067152, 1001616, 1001616, 1067152)
+High level operations: SmartPointerOriginal (7935487, 6429377, 6429377, 7935487)
+High level operations: SmartQueue (916949, 851422, 851422, 851422)
+
+Max write batches: 3698047
+
+--------------------------------------------------------------
+Benchmarking Graph ER_n32768_d20_original_semanticsTrue_bs64_cd_primeTrue_copiesFalse
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 2653, 22, 1, 82.12)
+
+Post algorithm contact discovery stats (33189090, 22377796, 22377796, 24528582)
+High level operations: AddressQueue (23259169, 14085148, 14085148, 14664288)
+High level operations: SmartAVLTree (1070026, 1004490, 1004490, 1070026)
+High level operations: SmartPointerOriginal (7940193, 6434083, 6434083, 7940193)
+High level operations: SmartQueue (919702, 854075, 854075, 854075)
+
+Max write batches: 26
+
+----- Finished test: ER_n32768_d20_original_semanticsTrue_bs64_cd_primeTrue_copiesFalse -----
+

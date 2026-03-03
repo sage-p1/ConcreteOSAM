@@ -1,0 +1,31 @@
+----- Running test: ER_n1024_d100_original_semanticsFalse_bs64_pr_primeTrue_copiesFalse -----
+
+Class Graph ER_n1024_d100_original_semanticsFalse_bs64_pr_primeTrue_copiesFalse
+
+Allocs, Reads, Read/Rem, Writes
+Pre build stats (0, 0, 0, 0)
+Post build stats (4047940, 2498666, 2498666, 2933676)
+High level operations: AddressQueue (2863636, 1572752, 1572752, 1757544)
+High level operations: SmartAVLTree (21932, 19884, 19884, 21932)
+High level operations: SmartPointerOriginal (993700, 745530, 745530, 993700)
+High level operations: SmartQueue (168672, 160500, 160500, 160500)
+
+Max write batches: 591811
+
+--------------------------------------------------------------
+Benchmarking Graph ER_n1024_d100_original_semanticsFalse_bs64_pr_primeTrue_copiesFalse
+Running pagerank for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(2189, 6567, 103, 2, 259.31018730013704)
+
+Post algorithm pagerank stats (4905796, 3209507, 3209507, 3566718)
+High level operations: AddressQueue (3491596, 2056689, 2056689, 2162879)
+High level operations: SmartAVLTree (24825, 22777, 22777, 24825)
+High level operations: SmartPointerOriginal (1211947, 962974, 962974, 1211947)
+High level operations: SmartQueue (177428, 167067, 167067, 167067)
+
+Max write batches: 20
+
+----- Finished test: ER_n1024_d100_original_semanticsFalse_bs64_pr_primeTrue_copiesFalse -----
+

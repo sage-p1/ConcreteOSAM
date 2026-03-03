@@ -1,0 +1,50 @@
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+RecursivePointer & 2052 & 1970 & 2147 & 2099 & 2101 & 2123 & 2148 & 2174 & 2104 & 2086 & 2153 & 2045 & 2137 & 2117 & 2209 \\ \hline
+SmartAVLTree & 852 & 1038 & 1236 & 1458 & 1704 & 1856 & 2066 & 2308 & 2432 & 2662 & 2874 & 3030 & 3242 & 3524 & 3688 \\ \hline
+SmartQueue & 1952 & 1870 & 2047 & 1999 & 2001 & 2023 & 2048 & 2074 & 2004 & 1986 & 2053 & 1945 & 2037 & 2017 & 2109 \\ \hline
+\end{tabular}
+\caption{Contact Discovery with pointer architecture recursive-True, $d\in\{20\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+AddressQueue & 8336 & 8270 & 9374 & 9338 & 9526 & 9732 & 9818 & 9976 & 9796 & 9608 & 9942 & 9486 & 9900 & 9848 & 10332 \\ \hline
+SmartAVLTree & 852 & 1038 & 1236 & 1458 & 1704 & 1856 & 2066 & 2308 & 2432 & 2662 & 2874 & 3030 & 3242 & 3524 & 3688 \\ \hline
+SmartPointerOriginal & 3904 & 3740 & 4094 & 3998 & 4002 & 4046 & 4096 & 4148 & 4008 & 3972 & 4106 & 3890 & 4074 & 4034 & 4218 \\ \hline
+SmartQueue & 1952 & 1870 & 2047 & 1999 & 2001 & 2023 & 2048 & 2074 & 2004 & 1986 & 2053 & 1945 & 2037 & 2017 & 2109 \\ \hline
+\end{tabular}
+\caption{Contact Discovery with pointer architecture original-True, $d\in\{20\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+AddressQueue & 38930 & 37077 & 40717 & 39437 & 39144 & 41195 & 40369 & 41441 & 40365 & 39604 & 41416 & 38992 & 40821 & 39744 & 42308 \\ \hline
+SmartAVLTree & 852 & 1038 & 1236 & 1458 & 1704 & 1856 & 2066 & 2308 & 2432 & 2662 & 2874 & 3030 & 3242 & 3524 & 3688 \\ \hline
+SmartPointerOriginal & 13664 & 13090 & 14329 & 13993 & 14007 & 14161 & 14336 & 14518 & 14028 & 13902 & 14371 & 13615 & 14259 & 14119 & 14763 \\ \hline
+SmartQueue & 1952 & 1870 & 2047 & 1999 & 2001 & 2023 & 2048 & 2074 & 2004 & 1986 & 2053 & 1945 & 2037 & 2017 & 2109 \\ \hline
+\end{tabular}
+\caption{Contact Discovery with pointer architecture original-False, $d\in\{20\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+SmartAVLTree & 852 & 1038 & 1236 & 1458 & 1704 & 1856 & 2066 & 2308 & 2432 & 2662 & 2874 & 3030 & 3242 & 3524 & 3688 \\ \hline
+SmartPointerMultiWrite & 2470 & 2556 & 2806 & 2843 & 2854 & 2926 & 2918 & 2943 & 2917 & 2938 & 3010 & 2884 & 3010 & 2963 & 3072 \\ \hline
+SmartQueue & 1952 & 1870 & 2047 & 1999 & 2001 & 2023 & 2048 & 2074 & 2004 & 1986 & 2053 & 1945 & 2037 & 2017 & 2109 \\ \hline
+\end{tabular}
+\caption{Contact Discovery with pointer architecture multiwrite-True, $d\in\{20\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+

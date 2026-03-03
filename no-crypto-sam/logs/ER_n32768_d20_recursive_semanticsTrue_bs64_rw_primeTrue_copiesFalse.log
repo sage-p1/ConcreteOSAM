@@ -1,0 +1,29 @@
+----- Running test: ER_n32768_d20_recursive_semanticsTrue_bs64_rw_primeTrue_copiesFalse -----
+
+Class Graph ER_n32768_d20_recursive_semanticsTrue_bs64_rw_primeTrue_copiesFalse
+
+Allocs, Reads, Read/Rem, Writes
+Pre build stats (0, 0, 0, 0)
+Post build stats (949727, 2541032, 2541032, 2835532)
+High level operations: RecursivePointer (433986, 687994, 687994, 916958)
+High level operations: SmartAVLTree (65522, 1001616, 1001616, 1067152)
+High level operations: SmartQueue (450219, 851422, 851422, 851422)
+
+Max write batches: 949726
+
+--------------------------------------------------------------
+Benchmarking Graph ER_n32768_d20_recursive_semanticsTrue_bs64_rw_primeTrue_copiesFalse
+Running random walk for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(5000, 5000, 22, 1, 0.0)
+
+Post algorithm random walk stats (949727, 2552480, 2552480, 2836980)
+High level operations: RecursivePointer (433986, 697994, 697994, 916958)
+High level operations: SmartAVLTree (65522, 1003064, 1003064, 1068600)
+High level operations: SmartQueue (450219, 851422, 851422, 851422)
+
+Max write batches: 1
+
+----- Finished test: ER_n32768_d20_recursive_semanticsTrue_bs64_rw_primeTrue_copiesFalse -----
+

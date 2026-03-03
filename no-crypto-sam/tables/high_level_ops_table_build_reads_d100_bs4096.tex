@@ -1,0 +1,50 @@
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+RecursivePointer & 1928 & 4006 & 8162 & 16324 & 32648 & 65446 & 131042 & 262084 & 524168 & 1048486 & 2097122 \\ \hline
+SmartAVLTree & 1628 & 3808 & 8780 & 19884 & 44364 & 97952 & 214440 & 464598 & 1001786 & 2150318 & 4592018 \\ \hline
+SmartQueue & 12672 & 25438 & 51306 & 102192 & 204876 & 409396 & 820322 & 1638304 & 3275188 & 6548712 & 13105384 \\ \hline
+\end{tabular}
+\caption{Building with pointer architecture recursive-True, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+AddressQueue & 171645 & 360008 & 749680 & 1478408 & 2967417 & 5905881 & 11876806 & 23722871 & 47488180 & 94865129 & 190148039 \\ \hline
+SmartAVLTree & 1628 & 3808 & 8780 & 19884 & 44364 & 97952 & 214440 & 464598 & 1001786 & 2150318 & 4592018 \\ \hline
+SmartPointerOriginal & 83953 & 176126 & 366711 & 723257 & 1451164 & 2888230 & 5808552 & 11601853 & 23223287 & 46392085 & 92993396 \\ \hline
+SmartQueue & 12672 & 25438 & 51306 & 102192 & 204876 & 409396 & 820322 & 1638304 & 3275188 & 6548712 & 13105384 \\ \hline
+\end{tabular}
+\caption{Building with pointer architecture original-True, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+AddressQueue & 481382 & 998312 & 2064237 & 4096718 & 8216170 & 16450262 & 33013415 & 65880062 & 131773954 & 263436926 & 527497021 \\ \hline
+SmartAVLTree & 1628 & 3808 & 8780 & 19884 & 44364 & 97952 & 214440 & 464598 & 1001786 & 2150318 & 4592018 \\ \hline
+SmartPointerOriginal & 209097 & 433189 & 894982 & 1776094 & 3561712 & 7129220 & 14307658 & 28553288 & 57112122 & 114173668 & 228623912 \\ \hline
+SmartQueue & 13272 & 26688 & 53856 & 107292 & 215076 & 429846 & 861272 & 1720204 & 3438988 & 6876362 & 13760734 \\ \hline
+\end{tabular}
+\caption{Building with pointer architecture original-False, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+$log_2(n)$ & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+SmartAVLTree & 1628 & 3808 & 8780 & 19884 & 44364 & 97952 & 214440 & 464598 & 1001786 & 2150318 & 4592018 \\ \hline
+SmartPointerMultiWrite & 29073 & 59788 & 121778 & 243401 & 487309 & 975769 & 1955979 & 3910263 & 7818652 & 15636172 & 31295114 \\ \hline
+SmartQueue & 12672 & 25438 & 51306 & 102192 & 204876 & 409396 & 820322 & 1638304 & 3275188 & 6548712 & 13105384 \\ \hline
+\end{tabular}
+\caption{Building with pointer architecture multiwrite-True, $d\in\{100\}$, and block size $4096$}
+\label{tab:placeholder}
+\end{table}
+
