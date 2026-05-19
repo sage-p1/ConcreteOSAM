@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.mypy_cache/
+venv/
+main_plot.tex
+main_table.tex

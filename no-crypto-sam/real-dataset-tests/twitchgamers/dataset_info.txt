@@ -1,0 +1,12 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Social networks
+
+name: twitch-gamers
+title: Twitch Gamers Social Network
+n (# nodes): 168114
+E (# edges): 6797557
+directed: false
+html: https://snap.stanford.edu/data/twitch_gamers.html
+url: https://snap.stanford.edu/data/twitch_gamers.zip

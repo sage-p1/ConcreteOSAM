@@ -1,0 +1,129 @@
+----- Running test: emailEucore_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+
+Graph from NetworkX: emailEucore_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Could not find new nodes to traverse. Walk terminated early at step 9.
+Could not find new nodes to traverse. Walk terminated early at step 2.
+Could not find new nodes to traverse. Walk terminated early at step 3.
+Could not find new nodes to traverse. Walk terminated early at step 6.
+Could not find new nodes to traverse. Walk terminated early at step 26.
+Could not find new nodes to traverse. Walk terminated early at step 42.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 32.
+Could not find new nodes to traverse. Walk terminated early at step 26.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 19.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 17.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 29.
+Could not find new nodes to traverse. Walk terminated early at step 47.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 23.
+Could not find new nodes to traverse. Walk terminated early at step 15.
+Could not find new nodes to traverse. Walk terminated early at step 32.
+Could not find new nodes to traverse. Walk terminated early at step 15.
+Could not find new nodes to traverse. Walk terminated early at step 9.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 1.
+Could not find new nodes to traverse. Walk terminated early at step 5.
+Could not find new nodes to traverse. Walk terminated early at step 37.
+Could not find new nodes to traverse. Walk terminated early at step 8.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 26.
+Could not find new nodes to traverse. Walk terminated early at step 38.
+Could not find new nodes to traverse. Walk terminated early at step 1.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 43.
+Could not find new nodes to traverse. Walk terminated early at step 10.
+Could not find new nodes to traverse. Walk terminated early at step 15.
+Could not find new nodes to traverse. Walk terminated early at step 16.
+Could not find new nodes to traverse. Walk terminated early at step 37.
+Could not find new nodes to traverse. Walk terminated early at step 17.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 31.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 30.
+Could not find new nodes to traverse. Walk terminated early at step 2.
+Could not find new nodes to traverse. Walk terminated early at step 12.
+Could not find new nodes to traverse. Walk terminated early at step 20.
+Could not find new nodes to traverse. Walk terminated early at step 1.
+Could not find new nodes to traverse. Walk terminated early at step 36.
+Could not find new nodes to traverse. Walk terminated early at step 12.
+Could not find new nodes to traverse. Walk terminated early at step 24.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 8.
+Could not find new nodes to traverse. Walk terminated early at step 2.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 7.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 12.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 31.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 13.
+Could not find new nodes to traverse. Walk terminated early at step 35.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 17.
+Could not find new nodes to traverse. Walk terminated early at step 4.
+Post build stats (41787, 69777, 100929)
+Post build structure stats:
+Structure stats: RecursivePointer (19797, 11502, 40644)
+Structure stats: SmartAVLTree (2005, 19504, 21514)
+Structure stats: SmartQueue (19985, 38771, 38771)
+
+Max write batches: 41786
+--------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph emailEucore_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+Running random walk for 50 trial(s) with walk length 50
+Could not find new nodes to traverse. Walk terminated early at step 5.
+Could not find new nodes to traverse. Walk terminated early at step 22.
+Could not find new nodes to traverse. Walk terminated early at step 5.
+Could not find new nodes to traverse. Walk terminated early at step 14.
+Could not find new nodes to traverse. Walk terminated early at step 6.
+Could not find new nodes to traverse. Walk terminated early at step 23.
+Could not find new nodes to traverse. Walk terminated early at step 34.
+Could not find new nodes to traverse. Walk terminated early at step 44.
+Could not find new nodes to traverse. Walk terminated early at step 6.
+Could not find new nodes to traverse. Walk terminated early at step 41.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 33.
+Could not find new nodes to traverse. Walk terminated early at step 32.
+Could not find new nodes to traverse. Walk terminated early at step 10.
+Could not find new nodes to traverse. Walk terminated early at step 44.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 13.
+Could not find new nodes to traverse. Walk terminated early at step 15.
+Could not find new nodes to traverse. Walk terminated early at step 13.
+Could not find new nodes to traverse. Walk terminated early at step 7.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 29.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 27.
+Could not find new nodes to traverse. Walk terminated early at step 34.
+Could not find new nodes to traverse. Walk terminated early at step 14.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+Could not find new nodes to traverse. Walk terminated early at step 0.
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(3071, 3454, 53, 1, 0.0)
+
+Post algorithm random walk stats (41787, 77206, 101833)
+Post random walk structure stats:
+Structure stats: RecursivePointer (19797, 18027, 40644)
+Structure stats: SmartAVLTree (2005, 20408, 22418)
+Structure stats: SmartQueue (19985, 38771, 38771)
+
+Max write batches: 1
+
+----- Finished test: emailEucore_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+

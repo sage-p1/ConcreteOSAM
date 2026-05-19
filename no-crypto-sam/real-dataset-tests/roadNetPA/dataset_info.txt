@@ -1,0 +1,12 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Road networks
+
+name: roadNet-PA
+title: Pennsylvania road network
+n (# nodes): 1088092
+E (# edges): 1541898
+directed: false
+html: https://snap.stanford.edu/data/roadNet-PA.html
+url: https://snap.stanford.edu/data/roadNet-PA.txt.gz

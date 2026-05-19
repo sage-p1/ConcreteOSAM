@@ -1,0 +1,84 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite & SmartQueue \\ \hline
+7 & 1260 & 16639 & 14089 \\ \hline
+8 & 1502 & 16300 & 14003 \\ \hline
+9 & 1638 & 16591 & 14231 \\ \hline
+10 & 1860 & 16636 & 14139 \\ \hline
+11 & 1994 & 16786 & 14348 \\ \hline
+12 & 2308 & 16881 & 14347 \\ \hline
+13 & 2448 & 16876 & 14142 \\ \hline
+14 & 2658 & 16865 & 14046 \\ \hline
+15 & 2850 & 16671 & 14029 \\ \hline
+16 & 3076 & 16867 & 14202 \\ \hline
+17 & 3304 & 16722 & 14097 \\ \hline
+18 & 3480 & 16946 & 14268 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Multi-Write architecture across 50 trials with degree $d=100$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+7 & 224797 & 1260 & 83648 & 14089 \\ \hline
+8 & 219477 & 1502 & 83121 & 14003 \\ \hline
+9 & 230077 & 1638 & 84721 & 14231 \\ \hline
+10 & 222058 & 1860 & 84051 & 14139 \\ \hline
+11 & 227051 & 1994 & 85698 & 14348 \\ \hline
+12 & 221228 & 2308 & 85582 & 14347 \\ \hline
+13 & 223225 & 2448 & 84073 & 14142 \\ \hline
+14 & 224639 & 2658 & 83389 & 14046 \\ \hline
+15 & 220005 & 2850 & 83222 & 14029 \\ \hline
+16 & 225687 & 3076 & 84602 & 14202 \\ \hline
+17 & 224201 & 3304 & 83814 & 14097 \\ \hline
+18 & 225157 & 3480 & 85017 & 14268 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Original architecture across 50 trials with degree $d=100$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+7 & 48270 & 1260 & 23978 & 14089 \\ \hline
+8 & 47986 & 1502 & 23806 & 14003 \\ \hline
+9 & 48878 & 1638 & 24262 & 14231 \\ \hline
+10 & 48514 & 1860 & 24078 & 14139 \\ \hline
+11 & 49446 & 1994 & 24496 & 14348 \\ \hline
+12 & 49418 & 2308 & 24494 & 14347 \\ \hline
+13 & 48582 & 2448 & 24084 & 14142 \\ \hline
+14 & 48204 & 2658 & 23892 & 14046 \\ \hline
+15 & 48136 & 2850 & 23858 & 14029 \\ \hline
+16 & 48846 & 3076 & 24204 & 14202 \\ \hline
+17 & 48404 & 3304 & 23994 & 14097 \\ \hline
+18 & 49100 & 3480 & 24336 & 14268 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Original w/ Move architecture across 50 trials with degree $d=100$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree & SmartQueue \\ \hline
+7 & 14189 & 1260 & 14089 \\ \hline
+8 & 14103 & 1502 & 14003 \\ \hline
+9 & 14331 & 1638 & 14231 \\ \hline
+10 & 14239 & 1860 & 14139 \\ \hline
+11 & 14448 & 1994 & 14348 \\ \hline
+12 & 14447 & 2308 & 14347 \\ \hline
+13 & 14242 & 2448 & 14142 \\ \hline
+14 & 14146 & 2658 & 14046 \\ \hline
+15 & 14129 & 2850 & 14029 \\ \hline
+16 & 14302 & 3076 & 14202 \\ \hline
+17 & 14197 & 3304 & 14097 \\ \hline
+18 & 14368 & 3480 & 14268 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Recursive architecture across 50 trials with degree $d=100$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_ptrecursive_movetrue}
+\end{table}
+

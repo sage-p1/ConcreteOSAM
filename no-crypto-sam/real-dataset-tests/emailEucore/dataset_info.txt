@@ -1,0 +1,14 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Networks with ground-truth communities
+
+name: email-Eu-core
+title: email-Eu-core network
+n (# nodes): 1005
+E (# edges): 25571
+directed: true
+html: https://snap.stanford.edu/data/email-Eu-core.html
+url: https://snap.stanford.edu/data/email-Eu-core.txt.gz
+
+There are several datasets, so pick email-Eu-core.txt.gz

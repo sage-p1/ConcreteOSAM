@@ -1,0 +1,79 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite & SmartQueue \\ \hline
+5 & 260 & 2463 & 812 \\ \hline
+6 & 666 & 4856 & 1618 \\ \hline
+7 & 1626 & 9783 & 3314 \\ \hline
+8 & 3822 & 20457 & 6788 \\ \hline
+9 & 8780 & 41000 & 13270 \\ \hline
+10 & 19920 & 81475 & 26466 \\ \hline
+11 & 44230 & 163989 & 53380 \\ \hline
+12 & 98066 & 327756 & 106424 \\ \hline
+13 & 214340 & 656412 & 213028 \\ \hline
+14 & 464426 & 1311671 & 425984 \\ \hline
+15 & 1001616 & 2625501 & 851422 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Building on Multi-Write architecture with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_build_d20_bs64_copiesfalse_primetrue_staticinsertiontrue_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 18144 & 260 & 7971 & 1112 \\ \hline
+6 & 36007 & 666 & 15820 & 2218 \\ \hline
+7 & 72946 & 1626 & 32092 & 4514 \\ \hline
+8 & 152405 & 3822 & 67038 & 9288 \\ \hline
+9 & 306318 & 8780 & 134324 & 18370 \\ \hline
+10 & 611715 & 19920 & 268280 & 36666 \\ \hline
+11 & 1228784 & 44230 & 538857 & 73778 \\ \hline
+12 & 2457082 & 98066 & 1077016 & 147324 \\ \hline
+13 & 4918376 & 214340 & 2156345 & 294981 \\ \hline
+14 & 9839014 & 464426 & 4314151 & 589840 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Building on Original architecture with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_build_d20_bs64_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 9724 & 260 & 4499 & 812 \\ \hline
+6 & 19211 & 666 & 8935 & 1618 \\ \hline
+7 & 40241 & 1626 & 18738 & 3314 \\ \hline
+8 & 85035 & 3822 & 39543 & 6788 \\ \hline
+9 & 166360 & 8780 & 77239 & 13270 \\ \hline
+10 & 332857 & 19920 & 154499 & 26466 \\ \hline
+11 & 669984 & 44230 & 310883 & 53380 \\ \hline
+12 & 1335218 & 98066 & 619247 & 106424 \\ \hline
+13 & 2674788 & 214340 & 1241244 & 213028 \\ \hline
+14 & 5354898 & 464426 & 2485287 & 425984 \\ \hline
+15 & 10695511 & 1001616 & 4961677 & 851422 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Building on Original w/ Move architecture with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_build_d20_bs64_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree & SmartQueue \\ \hline
+5 & 632 & 260 & 812 \\ \hline
+6 & 1264 & 666 & 1618 \\ \hline
+7 & 2528 & 1626 & 3314 \\ \hline
+8 & 5256 & 3822 & 6788 \\ \hline
+9 & 10712 & 8780 & 13270 \\ \hline
+10 & 21424 & 19920 & 26466 \\ \hline
+11 & 42846 & 44230 & 53380 \\ \hline
+12 & 85896 & 98066 & 106424 \\ \hline
+13 & 172045 & 214340 & 213028 \\ \hline
+14 & 344040 & 464426 & 425984 \\ \hline
+15 & 687994 & 1001616 & 851422 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Building on Recursive architecture with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_build_d20_bs64_copiesfalse_primetrue_staticinsertiontrue_ptrecursive_movetrue}
+\end{table}
+

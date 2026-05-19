@@ -1,0 +1,30 @@
+----- Running test: higgsTwitter_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+
+Graph from NetworkX: higgsTwitter_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (16357301, 40158050, 49636497)
+Post build structure stats:
+Structure stats: RecursivePointer (7892350, 7335479, 15900674)
+Structure stats: SmartAVLTree (913243, 17835149, 18748401)
+Structure stats: SmartQueue (7551708, 14987422, 14987422)
+
+Max write batches: 16357300
+------------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph higgsTwitter_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+Running pagerank for 50 trial(s) with walk length 50 and damping factor 0.9
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(4372, 2216, 3301, 1, 0.0)
+
+Post algorithm pagerank stats (16357301, 40170375, 49642234)
+Post pagerank structure stats:
+Structure stats: RecursivePointer (7892350, 7342067, 15900674)
+Structure stats: SmartAVLTree (913243, 17840886, 18754138)
+Structure stats: SmartQueue (7551708, 14987422, 14987422)
+
+Max write batches: 1
+
+----- Finished test: higgsTwitter_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+

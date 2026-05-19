@@ -1,0 +1,14 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Networks with ground-truth communities
+
+name: com-Youtube
+title: Youtube social network and ground-truth communities
+n (# nodes): 1134890
+E (# edges): 2987624
+directed: false
+html: https://snap.stanford.edu/data/com-Youtube.html
+url: https://snap.stanford.edu/data/bigdata/communities/com-youtube.ungraph.txt.gz
+
+There are several datasets, so pick com-youtube.ungraph.txt.gz

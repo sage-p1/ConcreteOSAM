@@ -1,0 +1,84 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite \\ \hline
+7 & 1813 & 43169 \\ \hline
+8 & 2080 & 45021 \\ \hline
+9 & 2383 & 47393 \\ \hline
+10 & 2893 & 49813 \\ \hline
+11 & 3151 & 50924 \\ \hline
+12 & 3458 & 51821 \\ \hline
+13 & 3769 & 53411 \\ \hline
+14 & 4215 & 53677 \\ \hline
+15 & 4505 & 53968 \\ \hline
+16 & 4531 & 53946 \\ \hline
+17 & 4870 & 54052 \\ \hline
+18 & 5523 & 54579 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Multi-Write architecture across 50 trials with degree $d=100$, block size $bs=64$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+7 & 504297 & 1813 & 221645 & 6615 \\ \hline
+8 & 499085 & 2080 & 222159 & 6612 \\ \hline
+9 & 492335 & 2383 & 220452 & 6657 \\ \hline
+10 & 483937 & 2893 & 217444 & 6567 \\ \hline
+11 & 481038 & 3151 & 216772 & 6573 \\ \hline
+12 & 481421 & 3458 & 217166 & 6603 \\ \hline
+13 & 485528 & 3769 & 219557 & 6585 \\ \hline
+14 & 482981 & 4215 & 218277 & 6555 \\ \hline
+15 & 483807 & 4505 & 218933 & 6570 \\ \hline
+16 & 487597 & 4531 & 220272 & 6618 \\ \hline
+17 & 487474 & 4870 & 220416 & 6609 \\ \hline
+18 & 485873 & 5523 & 219905 & 6558 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Original architecture across 50 trials with degree $d=100$, block size $bs=64$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal \\ \hline
+7 & 537289 & 1813 & 252271 \\ \hline
+8 & 540519 & 2080 & 257996 \\ \hline
+9 & 532416 & 2383 & 255821 \\ \hline
+10 & 526080 & 2893 & 253709 \\ \hline
+11 & 523149 & 3151 & 252919 \\ \hline
+12 & 523518 & 3458 & 253219 \\ \hline
+13 & 533742 & 3769 & 258781 \\ \hline
+14 & 530440 & 4215 & 257059 \\ \hline
+15 & 532657 & 4505 & 258206 \\ \hline
+16 & 535208 & 4531 & 259352 \\ \hline
+17 & 536145 & 4870 & 259929 \\ \hline
+18 & 537128 & 5523 & 260562 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Original w/ Move architecture across 50 trials with degree $d=100$, block size $bs=64$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree \\ \hline
+7 & 11025 & 1813 \\ \hline
+8 & 11020 & 2080 \\ \hline
+9 & 11095 & 2383 \\ \hline
+10 & 10945 & 2893 \\ \hline
+11 & 10955 & 3151 \\ \hline
+12 & 11005 & 3458 \\ \hline
+13 & 10975 & 3769 \\ \hline
+14 & 10925 & 4215 \\ \hline
+15 & 10950 & 4505 \\ \hline
+16 & 11030 & 4531 \\ \hline
+17 & 11015 & 4870 \\ \hline
+18 & 10930 & 5523 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Recursive architecture across 50 trials with degree $d=100$, block size $bs=64$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d100_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptrecursive_movetrue}
+\end{table}
+

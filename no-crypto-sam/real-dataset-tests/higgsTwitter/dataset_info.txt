@@ -1,0 +1,14 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Memetracker and Twitter
+
+name: higgs-twitter
+title: Higgs Twitter Dataset
+n (# nodes): 456626
+E (# edges): 14855842
+directed: true
+html: https://snap.stanford.edu/data/higgs-twitter.html
+url: https://snap.stanford.edu/data/higgs-social_network.edgelist.gz
+
+There are several datasets, so pick social_network.edgelist.gz

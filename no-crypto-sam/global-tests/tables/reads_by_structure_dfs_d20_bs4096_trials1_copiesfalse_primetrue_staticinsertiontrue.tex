@@ -1,0 +1,80 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite & SmartQueue & SmartStack \\ \hline
+5 & 10 & 4696 & 652 & 620 \\ \hline
+6 & 12 & 9440 & 1298 & 1234 \\ \hline
+7 & 2 & 19657 & 2674 & 2546 \\ \hline
+8 & 16 & 40067 & 5508 & 5252 \\ \hline
+9 & 14 & 78472 & 10710 & 10198 \\ \hline
+10 & 18 & 156544 & 21346 & 20322 \\ \hline
+11 & 18 & 316306 & 43146 & 41098 \\ \hline
+12 & 20 & 630420 & 85950 & 81854 \\ \hline
+13 & 12 & 1261806 & 171828 & 163636 \\ \hline
+14 & 26 & 2525493 & 343854 & 327470 \\ \hline
+15 & 28 & 5047213 & 687456 & 654688 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for DFS on Multi-Write architecture across 1 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dfs_d20_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue & SmartStack \\ \hline
+5 & 125485 & 10 & 51748 & 652 & 620 \\ \hline
+6 & 253705 & 12 & 104723 & 1298 & 1234 \\ \hline
+7 & 538087 & 2 & 222375 & 2674 & 2546 \\ \hline
+8 & 1136840 & 16 & 470858 & 5508 & 5252 \\ \hline
+9 & 2158473 & 14 & 893085 & 10710 & 10198 \\ \hline
+10 & 4284744 & 18 & 1772762 & 21346 & 20322 \\ \hline
+11 & 8785347 & 18 & 3636515 & 43146 & 41098 \\ \hline
+12 & 17385257 & 20 & 7195780 & 85950 & 81854 \\ \hline
+13 & 34731737 & 12 & 14373740 & 171828 & 163636 \\ \hline
+14 & 69516963 & 26 & 28768980 & 343854 & 327470 \\ \hline
+15 & 138918152 & 28 & 57489606 & 687456 & 654688 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for DFS on Original architecture across 1 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dfs_d20_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue & SmartStack \\ \hline
+5 & 24439 & 10 & 8422 & 652 & 620 \\ \hline
+6 & 48905 & 12 & 16915 & 1298 & 1234 \\ \hline
+7 & 103343 & 2 & 35876 & 2674 & 2546 \\ \hline
+8 & 215461 & 16 & 75533 & 5508 & 5252 \\ \hline
+9 & 412190 & 14 & 143785 & 10710 & 10198 \\ \hline
+10 & 818340 & 18 & 285367 & 21346 & 20322 \\ \hline
+11 & 1672454 & 18 & 584654 & 43146 & 41098 \\ \hline
+12 & 3310255 & 20 & 1157004 & 85950 & 81854 \\ \hline
+13 & 6620650 & 12 & 2311942 & 171828 & 163636 \\ \hline
+14 & 13255779 & 26 & 4627999 & 343854 & 327470 \\ \hline
+15 & 26483696 & 28 & 9248295 & 687456 & 654688 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for DFS on Original w/ Move architecture across 1 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dfs_d20_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree & SmartQueue & SmartStack \\ \hline
+5 & 1368 & 10 & 652 & 620 \\ \hline
+6 & 2724 & 12 & 1298 & 1234 \\ \hline
+7 & 5604 & 2 & 2674 & 2546 \\ \hline
+8 & 11528 & 16 & 5508 & 5252 \\ \hline
+9 & 22444 & 14 & 10710 & 10198 \\ \hline
+10 & 44740 & 18 & 21346 & 20322 \\ \hline
+11 & 90388 & 18 & 43146 & 41098 \\ \hline
+12 & 180092 & 20 & 85950 & 81854 \\ \hline
+13 & 360040 & 12 & 171828 & 163636 \\ \hline
+14 & 720476 & 26 & 343854 & 327470 \\ \hline
+15 & 1440448 & 28 & 687456 & 654688 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for DFS on Recursive architecture across 1 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dfs_d20_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptrecursive_movetrue}
+\end{table}
+

@@ -1,0 +1,30 @@
+----- Running test: twitchgamers_bs-64_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+
+Graph from NetworkX: twitchgamers_bs-64_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (113959112, 64934381, 146702588)
+Post build structure stats:
+Structure stats: SmartAVLTree (6358560, 6022332, 6358560)
+Structure stats: SmartPointerMultiWrite (86270391, 37984851, 119416830)
+Structure stats: SmartQueue (21330161, 20927198, 20927198)
+
+Max write batches: 81768207
+----------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph twitchgamers_bs-64_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+Running random walk for 50 trial(s) with walk length 50
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(5000, 8896, 1106, 1, 9.7612)
+
+Post algorithm random walk stats (114018484, 64993753, 146805766)
+Post random walk structure stats:
+Structure stats: SmartAVLTree (6360230, 6024002, 6360230)
+Structure stats: SmartPointerMultiWrite (86328093, 38042553, 119518338)
+Structure stats: SmartQueue (21330161, 20927198, 20927198)
+
+Max write batches: 43809
+
+----- Finished test: twitchgamers_bs-64_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+

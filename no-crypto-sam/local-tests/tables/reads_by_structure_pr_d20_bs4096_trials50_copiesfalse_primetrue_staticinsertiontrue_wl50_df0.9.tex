@@ -1,0 +1,100 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite \\ \hline
+5 & 1306 & 25829 \\ \hline
+6 & 1508 & 26096 \\ \hline
+7 & 1737 & 26405 \\ \hline
+8 & 2166 & 26337 \\ \hline
+9 & 2452 & 26467 \\ \hline
+10 & 2699 & 27045 \\ \hline
+11 & 3131 & 26460 \\ \hline
+12 & 3239 & 27395 \\ \hline
+13 & 3437 & 27315 \\ \hline
+14 & 3668 & 27162 \\ \hline
+15 & 4088 & 27117 \\ \hline
+16 & 4453 & 27085 \\ \hline
+17 & 4979 & 27099 \\ \hline
+18 & 4944 & 27231 \\ \hline
+19 & 5634 & 27307 \\ \hline
+20 & 5441 & 27427 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Multi-Write architecture across 50 trials with degree $d=20$, block size $bs=4096$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 318731 & 1306 & 122354 & 2202 \\ \hline
+6 & 322851 & 1508 & 125332 & 2214 \\ \hline
+7 & 329564 & 1737 & 129467 & 2218 \\ \hline
+8 & 330126 & 2166 & 130863 & 2197 \\ \hline
+9 & 324303 & 2452 & 129001 & 2205 \\ \hline
+10 & 323652 & 2699 & 129175 & 2212 \\ \hline
+11 & 324232 & 3131 & 129625 & 2188 \\ \hline
+12 & 326302 & 3239 & 130466 & 2216 \\ \hline
+13 & 323656 & 3437 & 129477 & 2219 \\ \hline
+14 & 326951 & 3668 & 130867 & 2221 \\ \hline
+15 & 324489 & 4088 & 129813 & 2215 \\ \hline
+16 & 321864 & 4453 & 128686 & 2208 \\ \hline
+17 & 321583 & 4979 & 128624 & 2197 \\ \hline
+18 & 322789 & 4944 & 129105 & 2215 \\ \hline
+19 & 323773 & 5634 & 129536 & 2196 \\ \hline
+20 & 325647 & 5441 & 130365 & 2220 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Original architecture across 50 trials with degree $d=20$, block size $bs=4096$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal \\ \hline
+5 & 144989 & 1306 & 52884 \\ \hline
+6 & 138112 & 1508 & 52934 \\ \hline
+7 & 136279 & 1737 & 55134 \\ \hline
+8 & 134102 & 2166 & 56515 \\ \hline
+9 & 127979 & 2452 & 54805 \\ \hline
+10 & 127524 & 2699 & 55384 \\ \hline
+11 & 125725 & 3131 & 55018 \\ \hline
+12 & 126397 & 3239 & 55396 \\ \hline
+13 & 126905 & 3437 & 55773 \\ \hline
+14 & 127894 & 3668 & 56285 \\ \hline
+15 & 126244 & 4088 & 55471 \\ \hline
+16 & 124315 & 4453 & 54544 \\ \hline
+17 & 124561 & 4979 & 54891 \\ \hline
+18 & 125237 & 4944 & 55003 \\ \hline
+19 & 127331 & 5634 & 56068 \\ \hline
+20 & 125557 & 5441 & 55214 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Original w/ Move architecture across 50 trials with degree $d=20$, block size $bs=4096$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree \\ \hline
+5 & 6606 & 1306 \\ \hline
+6 & 6642 & 1508 \\ \hline
+7 & 6654 & 1737 \\ \hline
+8 & 6591 & 2166 \\ \hline
+9 & 6615 & 2452 \\ \hline
+10 & 6636 & 2699 \\ \hline
+11 & 6564 & 3131 \\ \hline
+12 & 6648 & 3239 \\ \hline
+13 & 6657 & 3437 \\ \hline
+14 & 6663 & 3668 \\ \hline
+15 & 6645 & 4088 \\ \hline
+16 & 6624 & 4453 \\ \hline
+17 & 6591 & 4979 \\ \hline
+18 & 6645 & 4944 \\ \hline
+19 & 6588 & 5634 \\ \hline
+20 & 6660 & 5441 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for PageRank on Recursive architecture across 50 trials with degree $d=20$, block size $bs=4096$, walk length $wl=50$, damping factor $df=0.9$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_pr_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_df0.9_ptrecursive_movetrue}
+\end{table}
+

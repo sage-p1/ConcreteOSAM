@@ -1,0 +1,30 @@
+----- Running test: higgsTwitter_bs-4096_trials-50_pt-multiwrite_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: higgsTwitter_bs-4096_trials-50_pt-multiwrite_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (137107848, 90581980, 187074894)
+Post build structure stats:
+Structure stats: SmartAVLTree (18748401, 17835149, 18748401)
+Structure stats: SmartPointerMultiWrite (102915141, 57759409, 153339071)
+Structure stats: SmartQueue (15444306, 14987422, 14987422)
+
+Max write batches: 96492914
+------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph higgsTwitter_bs-4096_trials-50_pt-multiwrite_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 2999, 20, 1, 9.1)
+
+Post algorithm contact discovery stats (137118473, 90592505, 187086229)
+Post contact discovery structure stats:
+Structure stats: SmartAVLTree (18752018, 17838766, 18752018)
+Structure stats: SmartPointerMultiWrite (102919050, 57763318, 153343790)
+Structure stats: SmartQueue (15447405, 14990421, 14990421)
+
+Max write batches: 944
+
+----- Finished test: higgsTwitter_bs-4096_trials-50_pt-multiwrite_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+

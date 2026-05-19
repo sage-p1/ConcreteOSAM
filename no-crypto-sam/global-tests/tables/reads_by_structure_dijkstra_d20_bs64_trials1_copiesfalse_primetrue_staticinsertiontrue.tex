@@ -1,0 +1,79 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite & SmartQueue \\ \hline
+5 & 10 & 5028 & 844 \\ \hline
+6 & 12 & 10378 & 1682 \\ \hline
+7 & 2 & 21761 & 3442 \\ \hline
+8 & 16 & 45151 & 7044 \\ \hline
+9 & 14 & 87810 & 13782 \\ \hline
+10 & 18 & 175221 & 27490 \\ \hline
+11 & 18 & 354549 & 55428 \\ \hline
+12 & 20 & 705632 & 110520 \\ \hline
+13 & 12 & 1411365 & 221220 \\ \hline
+14 & 26 & 2826115 & 442368 \\ \hline
+15 & 28 & 5647296 & 884190 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Dijkstra on Multi-Write architecture across 1 trials with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dijkstra_d20_bs64_trials1_copiesfalse_primetrue_staticinsertiontrue_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 60766 & 10 & 24666 & 844 \\ \hline
+6 & 121789 & 12 & 48591 & 1682 \\ \hline
+7 & 253692 & 2 & 100870 & 3442 \\ \hline
+8 & 537379 & 16 & 213907 & 7044 \\ \hline
+9 & 1058349 & 14 & 419692 & 13782 \\ \hline
+10 & 2106566 & 18 & 834876 & 27490 \\ \hline
+11 & 4300098 & 18 & 1704712 & 55428 \\ \hline
+12 & 8542589 & 20 & 3386525 & 110520 \\ \hline
+13 & 17091603 & 12 & 6777903 & 221220 \\ \hline
+14 & 34217470 & 26 & 13567434 & 442368 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Dijkstra on Original architecture across 1 trials with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dijkstra_d20_bs64_trials1_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 22093 & 10 & 7962 & 844 \\ \hline
+6 & 45198 & 12 & 15531 & 1682 \\ \hline
+7 & 96509 & 2 & 32888 & 3442 \\ \hline
+8 & 213204 & 16 & 73149 & 7044 \\ \hline
+9 & 425318 & 14 & 144261 & 13782 \\ \hline
+10 & 844981 & 18 & 286023 & 27490 \\ \hline
+11 & 1749326 & 18 & 593892 & 55428 \\ \hline
+12 & 3460429 & 20 & 1173806 & 110520 \\ \hline
+13 & 6929769 & 12 & 2351830 & 221220 \\ \hline
+14 & 13883973 & 26 & 4710305 & 442368 \\ \hline
+15 & 27701226 & 28 & 9400885 & 884190 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Dijkstra on Original w/ Move architecture across 1 trials with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dijkstra_d20_bs64_trials1_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree & SmartQueue \\ \hline
+5 & 1560 & 10 & 844 \\ \hline
+6 & 3108 & 12 & 1682 \\ \hline
+7 & 6372 & 2 & 3442 \\ \hline
+8 & 13064 & 16 & 7044 \\ \hline
+9 & 25516 & 14 & 13782 \\ \hline
+10 & 50884 & 18 & 27490 \\ \hline
+11 & 102670 & 18 & 55428 \\ \hline
+12 & 204662 & 20 & 110520 \\ \hline
+13 & 409432 & 12 & 221220 \\ \hline
+14 & 818990 & 26 & 442368 \\ \hline
+15 & 1637182 & 28 & 884190 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Dijkstra on Recursive architecture across 1 trials with degree $d=20$, block size $bs=64$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_dijkstra_d20_bs64_trials1_copiesfalse_primetrue_staticinsertiontrue_ptrecursive_movetrue}
+\end{table}
+

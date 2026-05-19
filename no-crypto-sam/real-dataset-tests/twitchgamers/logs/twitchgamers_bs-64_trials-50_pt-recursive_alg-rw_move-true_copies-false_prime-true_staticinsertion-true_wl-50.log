@@ -1,0 +1,30 @@
+----- Running test: twitchgamers_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+
+Graph from NetworkX: twitchgamers_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (21431541, 31787942, 48549184)
+Post build structure stats:
+Structure stats: RecursivePointer (10519367, 4838412, 21263426)
+Structure stats: SmartAVLTree (336227, 6022332, 6358560)
+Structure stats: SmartQueue (10575947, 20927198, 20927198)
+
+Max write batches: 21431540
+---------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph twitchgamers_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+Running random walk for 50 trial(s) with walk length 50
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(5000, 8896, 1106, 1, 0.0)
+
+Post algorithm random walk stats (21431541, 31803508, 48550854)
+Post random walk structure stats:
+Structure stats: RecursivePointer (10519367, 4852308, 21263426)
+Structure stats: SmartAVLTree (336227, 6024002, 6360230)
+Structure stats: SmartQueue (10575947, 20927198, 20927198)
+
+Max write batches: 1
+
+----- Finished test: twitchgamers_bs-64_trials-50_pt-recursive_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+

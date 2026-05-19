@@ -1,0 +1,32 @@
+----- Running test: roadNetPA_bs-4096_trials-50_pt-original_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: roadNetPA_bs-4096_trials-50_pt-original_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (201789489, 162076245, 158514900)
+Post build structure stats:
+Structure stats: AddressQueue (110758208, 80476832, 68571711)
+Structure stats: SmartAVLTree (47756692, 45580508, 47756692)
+Structure stats: SmartPointerOriginal (39102701, 32935109, 39102701)
+Structure stats: SmartQueue (4171888, 3083796, 3083796)
+
+Max write batches: 16485719
+-------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph roadNetPA_bs-4096_trials-50_pt-original_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 272, 4, 1, 10.88)
+
+Post algorithm contact discovery stats (201795634, 162082522, 158520401)
+Post contact discovery structure stats:
+Structure stats: AddressQueue (110759568, 80478424, 68572527)
+Structure stats: SmartAVLTree (47760561, 45584377, 47760561)
+Structure stats: SmartPointerOriginal (39103245, 32935653, 39103245)
+Structure stats: SmartQueue (4172260, 3084068, 3084068)
+
+Max write batches: 10
+
+----- Finished test: roadNetPA_bs-4096_trials-50_pt-original_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+

@@ -1,0 +1,30 @@
+----- Running test: comyoutube_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+
+Graph from NetworkX: comyoutube_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (9688469, 72763033, 64745935)
+Post build structure stats:
+Structure stats: RecursivePointer (4024764, 18840456, 8553578)
+Structure stats: SmartAVLTree (2269779, 47638779, 49908559)
+Structure stats: SmartQueue (3393926, 6283798, 6283798)
+
+Max write batches: 9688468
+----------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph comyoutube_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+Running pagerank for 50 trial(s) with walk length 50 and damping factor 0.9
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(4494, 2502, 454, 1, 0.0)
+
+Post algorithm pagerank stats (9688469, 72774989, 64750895)
+Post pagerank structure stats:
+Structure stats: RecursivePointer (4024764, 18847452, 8553578)
+Structure stats: SmartAVLTree (2269779, 47643739, 49913519)
+Structure stats: SmartQueue (3393926, 6283798, 6283798)
+
+Max write batches: 1
+
+----- Finished test: comyoutube_bs-4096_trials-50_pt-recursive_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+

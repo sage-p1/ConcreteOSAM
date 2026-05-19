@@ -1,0 +1,32 @@
+----- Running test: ER_n-1024_d-100_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+
+Graph from NetworkX: ER_n-1024_d-100_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (3687589, 2210647, 2692228)
+Post build structure stats:
+Structure stats: AddressQueue (2670296, 1400810, 1675959)
+Structure stats: SmartAVLTree (21932, 19884, 21932)
+Structure stats: SmartPointerOriginal (892145, 687761, 892145)
+Structure stats: SmartQueue (103216, 102192, 102192)
+
+Max write batches: 511969
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-1024_d-100_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+Running pagerank for 50 trial(s) with walk length 50 and damping factor 0.9
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(4378, 2189, 102, 1, 225.80356327089996)
+
+Post algorithm pagerank stats (4685617, 2980195, 3440925)
+Post pagerank structure stats:
+Structure stats: AddressQueue (3416100, 1918134, 2172432)
+Structure stats: SmartAVLTree (24825, 22777, 24825)
+Structure stats: SmartPointerOriginal (1141476, 937092, 1141476)
+Structure stats: SmartQueue (103216, 102192, 102192)
+
+Max write batches: 6
+
+----- Finished test: ER_n-1024_d-100_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+

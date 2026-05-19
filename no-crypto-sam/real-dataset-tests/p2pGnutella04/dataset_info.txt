@@ -1,0 +1,12 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Internet peer-to-peer networks
+
+name: p2p-Gnutella04
+title: Gnutella peer-to-peer network, August 4 2002
+n (# nodes): 10876
+E (# edges): 39994
+directed: true
+html: https://snap.stanford.edu/data/p2p-Gnutella04.html
+url: https://snap.stanford.edu/data/p2p-Gnutella04.txt.gz

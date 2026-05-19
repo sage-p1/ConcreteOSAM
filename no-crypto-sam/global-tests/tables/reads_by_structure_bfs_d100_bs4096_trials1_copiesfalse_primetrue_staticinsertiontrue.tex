@@ -1,0 +1,68 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite & SmartQueue \\ \hline
+7 & 14 & 105369 & 25472 \\ \hline
+8 & 14 & 248361 & 51132 \\ \hline
+9 & 18 & 524130 & 103124 \\ \hline
+10 & 20 & 1066390 & 205408 \\ \hline
+11 & 12 & 2152854 & 411800 \\ \hline
+12 & 22 & 4312911 & 822888 \\ \hline
+13 & 28 & 8648553 & 1648836 \\ \hline
+14 & 28 & 17275248 & 3292992 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for BFS on Multi-Write architecture across 1 trials with degree $d=100$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_bfs_d100_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+7 & 10712078 & 14 & 4578184 & 25472 \\ \hline
+8 & 21799630 & 14 & 9242665 & 51132 \\ \hline
+9 & 44405295 & 18 & 18756209 & 103124 \\ \hline
+10 & 88563540 & 20 & 37329153 & 205408 \\ \hline
+11 & 178040154 & 12 & 74979483 & 411800 \\ \hline
+12 & 356237670 & 22 & 149996461 & 822888 \\ \hline
+13 & 715828048 & 28 & 301395663 & 1648836 \\ \hline
+14 & 1429780468 & 28 & 601672805 & 3292992 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for BFS on Original architecture across 1 trials with degree $d=100$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_bfs_d100_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+7 & 1600431 & 14 & 671967 & 25472 \\ \hline
+8 & 3388014 & 14 & 1349225 & 51132 \\ \hline
+9 & 6924863 & 18 & 2692625 & 103124 \\ \hline
+10 & 14027252 & 20 & 5381821 & 205408 \\ \hline
+11 & 28314035 & 12 & 10804905 & 411800 \\ \hline
+12 & 57170571 & 22 & 21785785 & 822888 \\ \hline
+13 & 115341176 & 28 & 43933771 & 1648836 \\ \hline
+14 & 232183759 & 28 & 88124269 & 3292992 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for BFS on Original w/ Move architecture across 1 trials with degree $d=100$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_bfs_d100_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree & SmartQueue \\ \hline
+7 & 25856 & 14 & 25472 \\ \hline
+8 & 51900 & 14 & 51132 \\ \hline
+9 & 104660 & 18 & 103124 \\ \hline
+10 & 208480 & 20 & 205408 \\ \hline
+11 & 417944 & 12 & 411800 \\ \hline
+12 & 835176 & 22 & 822888 \\ \hline
+13 & 1673412 & 28 & 1648836 \\ \hline
+14 & 3342144 & 28 & 3292992 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for BFS on Recursive architecture across 1 trials with degree $d=100$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_bfs_d100_bs4096_trials1_copiesfalse_primetrue_staticinsertiontrue_ptrecursive_movetrue}
+\end{table}
+

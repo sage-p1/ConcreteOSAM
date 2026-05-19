@@ -1,0 +1,30 @@
+----- Running test: comyoutube_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+
+Graph from NetworkX: comyoutube_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (157698216, 134923757, 218723445)
+Post build structure stats:
+Structure stats: SmartAVLTree (49908559, 47638779, 49908559)
+Structure stats: SmartPointerMultiWrite (100370364, 81001180, 162531088)
+Structure stats: SmartQueue (7419293, 6283798, 6283798)
+
+Max write batches: 83799688
+----------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph comyoutube_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+Running random walk for 50 trial(s) with walk length 50
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(5000, 2831, 449, 1, 6.0188)
+
+Post algorithm random walk stats (157733081, 134958622, 218783404)
+Post random walk structure stats:
+Structure stats: SmartAVLTree (49910499, 47640719, 49910499)
+Structure stats: SmartPointerMultiWrite (100403289, 81034105, 162589107)
+Structure stats: SmartQueue (7419293, 6283798, 6283798)
+
+Max write batches: 25097
+
+----- Finished test: comyoutube_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+

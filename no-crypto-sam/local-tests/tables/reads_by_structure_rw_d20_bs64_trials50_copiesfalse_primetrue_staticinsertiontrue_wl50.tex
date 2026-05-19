@@ -1,0 +1,100 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite \\ \hline
+5 & 412 & 31799 \\ \hline
+6 & 550 & 31988 \\ \hline
+7 & 604 & 32153 \\ \hline
+8 & 698 & 32422 \\ \hline
+9 & 800 & 32290 \\ \hline
+10 & 888 & 32275 \\ \hline
+11 & 1042 & 32582 \\ \hline
+12 & 1134 & 32641 \\ \hline
+13 & 1254 & 32293 \\ \hline
+14 & 1326 & 32864 \\ \hline
+15 & 1448 & 32562 \\ \hline
+16 & 1574 & 32537 \\ \hline
+17 & 1636 & 32562 \\ \hline
+18 & 1724 & 32592 \\ \hline
+19 & 1822 & 32562 \\ \hline
+20 & 1916 & 32641 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Multi-Write architecture across 50 trials with degree $d=20$, block size $bs=64$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d20_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 289166 & 412 & 112825 & 5000 \\ \hline
+6 & 277244 & 550 & 108640 & 5000 \\ \hline
+7 & 269532 & 604 & 106707 & 5000 \\ \hline
+8 & 263122 & 698 & 105202 & 5000 \\ \hline
+9 & 256546 & 800 & 103226 & 5000 \\ \hline
+10 & 253276 & 888 & 102552 & 5000 \\ \hline
+11 & 251022 & 1042 & 102007 & 5000 \\ \hline
+12 & 252391 & 1134 & 102996 & 5000 \\ \hline
+13 & 250319 & 1254 & 102299 & 5003 \\ \hline
+14 & 250848 & 1326 & 102271 & 5004 \\ \hline
+15 & 250100 & 1448 & 102103 & 5000 \\ \hline
+16 & 250777 & 1574 & 102418 & 5003 \\ \hline
+17 & 250267 & 1636 & 102364 & 5005 \\ \hline
+18 & 250402 & 1724 & 102366 & 5001 \\ \hline
+19 & 250464 & 1822 & 102427 & 5002 \\ \hline
+20 & 249798 & 1916 & 101830 & 5003 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Original architecture across 50 trials with degree $d=20$, block size $bs=64$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d20_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal \\ \hline
+5 & 159767 & 412 & 57822 \\ \hline
+6 & 155141 & 550 & 58624 \\ \hline
+7 & 153651 & 604 & 61080 \\ \hline
+8 & 150428 & 698 & 62246 \\ \hline
+9 & 143490 & 800 & 60448 \\ \hline
+10 & 140056 & 888 & 60072 \\ \hline
+11 & 138644 & 1042 & 59740 \\ \hline
+12 & 142449 & 1134 & 62122 \\ \hline
+13 & 139772 & 1254 & 60969 \\ \hline
+14 & 140298 & 1326 & 61166 \\ \hline
+15 & 140329 & 1448 & 61288 \\ \hline
+16 & 140124 & 1574 & 61227 \\ \hline
+17 & 140446 & 1636 & 61333 \\ \hline
+18 & 140322 & 1724 & 61387 \\ \hline
+19 & 140876 & 1822 & 61690 \\ \hline
+20 & 137732 & 1916 & 59923 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Original w/ Move architecture across 50 trials with degree $d=20$, block size $bs=64$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d20_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree \\ \hline
+5 & 10000 & 412 \\ \hline
+6 & 10000 & 550 \\ \hline
+7 & 10000 & 604 \\ \hline
+8 & 10000 & 698 \\ \hline
+9 & 10000 & 800 \\ \hline
+10 & 10000 & 888 \\ \hline
+11 & 10000 & 1042 \\ \hline
+12 & 10000 & 1134 \\ \hline
+13 & 10003 & 1254 \\ \hline
+14 & 10004 & 1326 \\ \hline
+15 & 10000 & 1448 \\ \hline
+16 & 10003 & 1574 \\ \hline
+17 & 10005 & 1636 \\ \hline
+18 & 10001 & 1724 \\ \hline
+19 & 10002 & 1822 \\ \hline
+20 & 10003 & 1916 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Recursive architecture across 50 trials with degree $d=20$, block size $bs=64$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d20_bs64_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptrecursive_movetrue}
+\end{table}
+

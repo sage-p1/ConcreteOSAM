@@ -1,0 +1,30 @@
+----- Running test: ER_n-8192_d-100_bs-4096_trials-1_pt-recursive_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: ER_n-8192_d-100_bs-4096_trials-1_pt-recursive_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (844899, 1165804, 1887852)
+Post build structure stats:
+Structure stats: RecursivePointer (416365, 131042, 836706)
+Structure stats: SmartAVLTree (16284, 214440, 230824)
+Structure stats: SmartQueue (412250, 820322, 820322)
+
+Max write batches: 844898
+-------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-8192_d-100_bs-4096_trials-1_pt-recursive_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True
+Running dijkstra for 1 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(836706, 820322, 102, 1, 0.0)
+
+Post algorithm dijkstra stats (853200, 3667758, 2732778)
+Post dijkstra structure stats:
+Structure stats: RecursivePointer (416365, 1804454, 853090)
+Structure stats: SmartAVLTree (16284, 214468, 230852)
+Structure stats: SmartQueue (420551, 1648836, 1648836)
+
+Max write batches: 143
+
+----- Finished test: ER_n-8192_d-100_bs-4096_trials-1_pt-recursive_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True -----
+

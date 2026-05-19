@@ -1,0 +1,31 @@
+----- Running test: ER_n-4096_d-20_bs-4096_trials-1_pt-recursive_alg-dfs_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: ER_n-4096_d-20_bs-4096_trials-1_pt-recursive_alg-dfs_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (94143, 245366, 278158)
+Post build structure stats:
+Structure stats: RecursivePointer (44033, 65446, 90046)
+Structure stats: SmartAVLTree (8170, 98066, 106258)
+Structure stats: SmartQueue (41940, 81854, 81854)
+
+Max write batches: 94142
+-------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-4096_d-20_bs-4096_trials-1_pt-recursive_alg-dfs_move-True_copies-False_prime-True_staticinsertion-True
+Running dfs for 1 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(90046, 81854, 22, 1, 0.0)
+
+Post algorithm dfs stats (139252, 593282, 454174)
+Post dfs structure stats:
+Structure stats: RecursivePointer (44033, 245538, 98238)
+Structure stats: SmartAVLTree (8170, 98086, 106278)
+Structure stats: SmartQueue (87049, 167804, 167804)
+Structure stats: SmartStack (0, 81854, 81854)
+
+Max write batches: 36
+
+----- Finished test: ER_n-4096_d-20_bs-4096_trials-1_pt-recursive_alg-dfs_move-True_copies-False_prime-True_staticinsertion-True -----
+

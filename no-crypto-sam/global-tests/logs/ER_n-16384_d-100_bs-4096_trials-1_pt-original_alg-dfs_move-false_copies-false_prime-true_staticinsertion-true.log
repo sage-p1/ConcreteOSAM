@@ -1,0 +1,33 @@
+----- Running test: ER_n-16384_d-100_bs-4096_trials-1_pt-original_alg-dfs_move-False_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: ER_n-16384_d-100_bs-4096_trials-1_pt-original_alg-dfs_move-False_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (119717068, 96618152, 86150584)
+Post build structure stats:
+Structure stats: AddressQueue (85571318, 65880062, 52103118)
+Structure stats: SmartAVLTree (497366, 464598, 497366)
+Structure stats: SmartPointerOriginal (31829896, 28553288, 31829896)
+Structure stats: SmartQueue (1818488, 1720204, 1720204)
+
+Max write batches: 6569135
+---------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-16384_d-100_bs-4096_trials-1_pt-original_alg-dfs_move-False_copies-False_prime-True_staticinsertion-True
+Running dfs for 1 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(1654689, 1638304, 137, 2, 1112.8092662729975)
+
+Post algorithm dfs stats (2531625453, 2119423169, 1894254535)
+Post dfs structure stats:
+Structure stats: AddressQueue (1892020553, 1483242314, 1254764304)
+Structure stats: SmartAVLTree (497394, 464626, 497394)
+Structure stats: SmartPointerOriginal (633979641, 630703033, 633979641)
+Structure stats: SmartQueue (3489561, 3374892, 3374892)
+Structure stats: SmartStack (1638304, 1638304, 1638304)
+
+Max write batches: 867
+
+----- Finished test: ER_n-16384_d-100_bs-4096_trials-1_pt-original_alg-dfs_move-False_copies-False_prime-True_staticinsertion-True -----
+

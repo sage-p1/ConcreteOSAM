@@ -1,0 +1,84 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite \\ \hline
+7 & 624 & 43297 \\ \hline
+8 & 720 & 44574 \\ \hline
+9 & 834 & 46158 \\ \hline
+10 & 936 & 47709 \\ \hline
+11 & 1038 & 48899 \\ \hline
+12 & 1152 & 50233 \\ \hline
+13 & 1244 & 50293 \\ \hline
+14 & 1310 & 50616 \\ \hline
+15 & 1448 & 50360 \\ \hline
+16 & 1552 & 50403 \\ \hline
+17 & 1666 & 53011 \\ \hline
+18 & 1750 & 49778 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Multi-Write architecture across 50 trials with degree $d=100$, block size $bs=4096$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d100_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+7 & 1556271 & 624 & 637865 & 2500 \\ \hline
+8 & 1559104 & 720 & 641121 & 2500 \\ \hline
+9 & 1572160 & 834 & 647317 & 2500 \\ \hline
+10 & 1564940 & 936 & 645202 & 2500 \\ \hline
+11 & 1562619 & 1038 & 644463 & 2500 \\ \hline
+12 & 1569935 & 1152 & 647700 & 2500 \\ \hline
+13 & 1572018 & 1244 & 648828 & 2500 \\ \hline
+14 & 1569767 & 1310 & 647965 & 2500 \\ \hline
+15 & 1563866 & 1448 & 645470 & 2500 \\ \hline
+16 & 1563621 & 1552 & 645508 & 2500 \\ \hline
+17 & 1567909 & 1666 & 647304 & 2500 \\ \hline
+18 & 1573021 & 1750 & 649694 & 2500 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Original architecture across 50 trials with degree $d=100$, block size $bs=4096$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d100_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal \\ \hline
+7 & 561320 & 624 & 260302 \\ \hline
+8 & 551201 & 720 & 260222 \\ \hline
+9 & 547576 & 834 & 260694 \\ \hline
+10 & 544107 & 936 & 260736 \\ \hline
+11 & 538550 & 1038 & 258702 \\ \hline
+12 & 545050 & 1152 & 262044 \\ \hline
+13 & 546674 & 1244 & 263200 \\ \hline
+14 & 544440 & 1310 & 262238 \\ \hline
+15 & 541644 & 1448 & 260840 \\ \hline
+16 & 545889 & 1552 & 262980 \\ \hline
+17 & 545692 & 1666 & 263052 \\ \hline
+18 & 550613 & 1750 & 265588 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Original w/ Move architecture across 50 trials with degree $d=100$, block size $bs=4096$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d100_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree \\ \hline
+7 & 7500 & 624 \\ \hline
+8 & 7500 & 720 \\ \hline
+9 & 7500 & 834 \\ \hline
+10 & 7500 & 936 \\ \hline
+11 & 7500 & 1038 \\ \hline
+12 & 7500 & 1152 \\ \hline
+13 & 7500 & 1244 \\ \hline
+14 & 7500 & 1310 \\ \hline
+15 & 7500 & 1448 \\ \hline
+16 & 7500 & 1552 \\ \hline
+17 & 7500 & 1666 \\ \hline
+18 & 7500 & 1750 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Random Walk on Recursive architecture across 50 trials with degree $d=100$, block size $bs=4096$, walk length $wl=50$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_rw_d100_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_wl50_ptrecursive_movetrue}
+\end{table}
+

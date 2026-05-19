@@ -1,0 +1,30 @@
+----- Running test: twitchgamers_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: twitchgamers_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (15634557, 24084868, 36955216)
+Post build structure stats:
+Structure stats: RecursivePointer (7711435, 2932322, 15466442)
+Structure stats: SmartAVLTree (336227, 6022332, 6358560)
+Structure stats: SmartQueue (7586895, 15130214, 15130214)
+
+Max write batches: 15634556
+-----------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph twitchgamers_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 8235, 73, 1, 0.0)
+
+Post algorithm contact discovery stats (15635928, 24104790, 36966803)
+Post contact discovery structure stats:
+Structure stats: RecursivePointer (7711435, 2940657, 15466442)
+Structure stats: SmartAVLTree (336227, 6025684, 6361912)
+Structure stats: SmartQueue (7588266, 15138449, 15138449)
+
+Max write batches: 1369
+
+----- Finished test: twitchgamers_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+

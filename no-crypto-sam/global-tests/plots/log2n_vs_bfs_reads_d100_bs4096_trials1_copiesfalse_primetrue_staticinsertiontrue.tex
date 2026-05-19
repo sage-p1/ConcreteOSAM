@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+\begin{axis}[
+xlabel={$\log_2 n$}, ylabel={$\log_2 (\text{{reads}})$},
+width=10cm, height=8cm,
+grid=major,
+legend entries={Multi-Write, Original, Original w/ Move, Recursive},
+legend cell align={left},
+legend style={at={(1.03,0.5)}, anchor=west},
+]
+\addplot+[only marks] coordinates {
+(7.0, 17.0)
+(8.0, 18.19)
+(9.0, 19.26)
+(10.0, 20.28)
+(11.0, 21.29)
+(12.0, 22.29)
+(13.0, 23.3)
+(14.0, 24.29)
+};
+\addplot+[only marks] coordinates {
+(7.0, 23.87)
+(8.0, 24.89)
+(9.0, 25.91)
+(10.0, 26.91)
+(11.0, 27.92)
+(12.0, 28.92)
+(13.0, 29.92)
+(14.0, 30.92)
+};
+\addplot+[only marks] coordinates {
+(7.0, 21.13)
+(8.0, 22.19)
+(9.0, 23.21)
+(10.0, 24.23)
+(11.0, 25.24)
+(12.0, 26.25)
+(13.0, 27.26)
+(14.0, 28.27)
+};
+\addplot+[only marks] coordinates {
+(7.0, 15.65)
+(8.0, 16.65)
+(9.0, 17.66)
+(10.0, 18.66)
+(11.0, 20.66)
+(12.0, 21.66)
+(13.0, 22.66)
+(14.0, 23.66)
+};
+\end{axis}
+\end{tikzpicture}

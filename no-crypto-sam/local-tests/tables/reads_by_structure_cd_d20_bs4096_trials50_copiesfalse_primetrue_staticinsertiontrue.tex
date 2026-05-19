@@ -1,0 +1,100 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & SmartAVLTree & SmartPointerMultiWrite & SmartQueue \\ \hline
+5 & 852 & 2422 & 1952 \\ \hline
+6 & 1038 & 2479 & 1870 \\ \hline
+7 & 1236 & 2750 & 2047 \\ \hline
+8 & 1458 & 2730 & 1999 \\ \hline
+9 & 1704 & 2757 & 2001 \\ \hline
+10 & 1856 & 2824 & 2023 \\ \hline
+11 & 2066 & 2832 & 2048 \\ \hline
+12 & 2308 & 2869 & 2074 \\ \hline
+13 & 2432 & 2838 & 2004 \\ \hline
+14 & 2662 & 2844 & 1986 \\ \hline
+15 & 2874 & 2921 & 2053 \\ \hline
+16 & 3030 & 2781 & 1945 \\ \hline
+17 & 3242 & 2900 & 2037 \\ \hline
+18 & 3524 & 2902 & 2017 \\ \hline
+19 & 3688 & 2975 & 2109 \\ \hline
+20 & 3818 & 2904 & 2018 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Multi-Write architecture across 50 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_ptmultiwrite_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 38930 & 852 & 13664 & 1952 \\ \hline
+6 & 37077 & 1038 & 13090 & 1870 \\ \hline
+7 & 40717 & 1236 & 14329 & 2047 \\ \hline
+8 & 39437 & 1458 & 13993 & 1999 \\ \hline
+9 & 39144 & 1704 & 14007 & 2001 \\ \hline
+10 & 41195 & 1856 & 14161 & 2023 \\ \hline
+11 & 40369 & 2066 & 14336 & 2048 \\ \hline
+12 & 41441 & 2308 & 14518 & 2074 \\ \hline
+13 & 40365 & 2432 & 14028 & 2004 \\ \hline
+14 & 39604 & 2662 & 13902 & 1986 \\ \hline
+15 & 41416 & 2874 & 14371 & 2053 \\ \hline
+16 & 38992 & 3030 & 13615 & 1945 \\ \hline
+17 & 40821 & 3242 & 14259 & 2037 \\ \hline
+18 & 39744 & 3524 & 14119 & 2017 \\ \hline
+19 & 42308 & 3688 & 14763 & 2109 \\ \hline
+20 & 41050 & 3818 & 14126 & 2018 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Original architecture across 50 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movefalse}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+$log_2(n)$ & AddressQueue & SmartAVLTree & SmartPointerOriginal & SmartQueue \\ \hline
+5 & 7936 & 852 & 3904 & 1952 \\ \hline
+6 & 7686 & 1038 & 3740 & 1870 \\ \hline
+7 & 8480 & 1236 & 4094 & 2047 \\ \hline
+8 & 8332 & 1458 & 3998 & 1999 \\ \hline
+9 & 8380 & 1704 & 4002 & 2001 \\ \hline
+10 & 8478 & 1856 & 4046 & 2023 \\ \hline
+11 & 8598 & 2066 & 4096 & 2048 \\ \hline
+12 & 8698 & 2308 & 4148 & 2074 \\ \hline
+13 & 8450 & 2432 & 4008 & 2004 \\ \hline
+14 & 8362 & 2662 & 3972 & 1986 \\ \hline
+15 & 8638 & 2874 & 4106 & 2053 \\ \hline
+16 & 8202 & 3030 & 3890 & 1945 \\ \hline
+17 & 8580 & 3242 & 4074 & 2037 \\ \hline
+18 & 8518 & 3524 & 4034 & 2017 \\ \hline
+19 & 8920 & 3688 & 4218 & 2109 \\ \hline
+20 & 8530 & 3818 & 4036 & 2018 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Original w/ Move architecture across 50 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_ptoriginal_movetrue}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|c|c|c|}
+$log_2(n)$ & RecursivePointer & SmartAVLTree & SmartQueue \\ \hline
+5 & 2052 & 852 & 1952 \\ \hline
+6 & 1970 & 1038 & 1870 \\ \hline
+7 & 2147 & 1236 & 2047 \\ \hline
+8 & 2099 & 1458 & 1999 \\ \hline
+9 & 2101 & 1704 & 2001 \\ \hline
+10 & 2123 & 1856 & 2023 \\ \hline
+11 & 2148 & 2066 & 2048 \\ \hline
+12 & 2174 & 2308 & 2074 \\ \hline
+13 & 2104 & 2432 & 2004 \\ \hline
+14 & 2086 & 2662 & 1986 \\ \hline
+15 & 2153 & 2874 & 2053 \\ \hline
+16 & 2045 & 3030 & 1945 \\ \hline
+17 & 2137 & 3242 & 2037 \\ \hline
+18 & 2117 & 3524 & 2017 \\ \hline
+19 & 2209 & 3688 & 2109 \\ \hline
+20 & 2118 & 3818 & 2018 \\ \hline
+\end{tabular}
+\caption{Breakdown of reads by structure for Contact Discovery on Recursive architecture across 50 trials with degree $d=20$, block size $bs=4096$, smart copying disabled, priming enabled, and static building enabled.}
+    \label{tab:reads_by_structure_cd_d20_bs4096_trials50_copiesfalse_primetrue_staticinsertiontrue_ptrecursive_movetrue}
+\end{table}
+

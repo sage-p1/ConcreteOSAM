@@ -1,0 +1,32 @@
+----- Running test: ER_n-65536_d-100_bs-4096_trials-50_pt-original_alg-cd_move-False_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: ER_n-65536_d-100_bs-4096_trials-50_pt-original_alg-cd_move-False_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (478973710, 386637274, 344760720)
+Post build structure stats:
+Structure stats: AddressQueue (342151680, 263436926, 208331876)
+Structure stats: SmartAVLTree (2281390, 2150318, 2281390)
+Structure stats: SmartPointerOriginal (127271092, 114173668, 127271092)
+Structure stats: SmartQueue (7269548, 6876362, 6876362)
+
+Max write batches: 26258335
+---------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-65536_d-100_bs-4096_trials-50_pt-original_alg-cd_move-False_copies-False_prime-True_staticinsertion-True
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 10002, 101, 2, 900.18)
+
+Post algorithm contact discovery stats (479256942, 386922158, 344973838)
+Post contact discovery structure stats:
+Structure stats: AddressQueue (342351720, 263638718, 208461902)
+Structure stats: SmartAVLTree (2284466, 2153394, 2284466)
+Structure stats: SmartPointerOriginal (127341106, 114243682, 127341106)
+Structure stats: SmartQueue (7279650, 6886364, 6886364)
+
+Max write batches: 141
+
+----- Finished test: ER_n-65536_d-100_bs-4096_trials-50_pt-original_alg-cd_move-False_copies-False_prime-True_staticinsertion-True -----
+

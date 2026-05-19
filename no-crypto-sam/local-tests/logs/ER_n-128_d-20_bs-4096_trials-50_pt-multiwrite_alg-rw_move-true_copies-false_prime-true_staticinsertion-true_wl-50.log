@@ -1,0 +1,30 @@
+----- Running test: ER_n-128_d-20_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+
+Graph from NetworkX: ER_n-128_d-20_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (21505, 13355, 28632)
+Post build structure stats:
+Structure stats: SmartAVLTree (1882, 1626, 1882)
+Structure stats: SmartPointerMultiWrite (16949, 9183, 24204)
+Structure stats: SmartQueue (2674, 2546, 2546)
+
+Max write batches: 15277
+-------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-128_d-20_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50
+Running random walk for 50 trial(s) with walk length 50
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(5000, 2500, 22, 1, 5.4306)
+
+Post algorithm random walk stats (51762, 43612, 81042)
+Post random walk structure stats:
+Structure stats: SmartAVLTree (2486, 2230, 2486)
+Structure stats: SmartPointerMultiWrite (46602, 38836, 76010)
+Structure stats: SmartQueue (2674, 2546, 2546)
+
+Max write batches: 22156
+
+----- Finished test: ER_n-128_d-20_bs-4096_trials-50_pt-multiwrite_alg-rw_move-True_copies-False_prime-True_staticinsertion-True_wl-50 -----
+

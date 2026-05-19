@@ -1,0 +1,30 @@
+----- Running test: ER_n-32768_d-20_bs-4096_trials-1_pt-multiwrite_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: ER_n-32768_d-20_bs-4096_trials-1_pt-multiwrite_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (6213115, 4117979, 8117854)
+Post build structure stats:
+Structure stats: SmartAVLTree (1067152, 1001616, 1067152)
+Structure stats: SmartPointerMultiWrite (4458507, 2461675, 6396014)
+Structure stats: SmartQueue (687456, 654688, 654688)
+
+Max write batches: 3999875
+--------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-32768_d-20_bs-4096_trials-1_pt-multiwrite_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True
+Running dijkstra for 1 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(720224, 654688, 22, 1, 6.239812891544853)
+
+Post algorithm dijkstra stats (12383930, 10256025, 18266014)
+Post dijkstra structure stats:
+Structure stats: SmartAVLTree (1067180, 1001644, 1067180)
+Structure stats: SmartPointerMultiWrite (9909069, 7912237, 15856690)
+Structure stats: SmartQueue (1407681, 1342144, 1342144)
+
+Max write batches: 4010117
+
+----- Finished test: ER_n-32768_d-20_bs-4096_trials-1_pt-multiwrite_alg-dijkstra_move-True_copies-False_prime-True_staticinsertion-True -----
+

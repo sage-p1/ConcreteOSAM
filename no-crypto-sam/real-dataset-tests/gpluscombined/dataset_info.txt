@@ -1,0 +1,12 @@
+Stanford Large Network Dataset Collection
+parent dataset: https://snap.stanford.edu/data/
+
+Social networks
+
+name: ego-Gplus
+title: Social circles: Google+
+n (# nodes): 107614
+E (# edges): 13673453
+directed: true
+html: https://snap.stanford.edu/data/ego-Gplus.html
+url: https://snap.stanford.edu/data/gplus_combined.txt.gz

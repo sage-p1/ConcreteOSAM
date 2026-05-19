@@ -1,0 +1,32 @@
+----- Running test: roadNetPA_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+
+Graph from NetworkX: roadNetPA_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (201789489, 162076245, 158514900)
+Post build structure stats:
+Structure stats: AddressQueue (110758208, 80476832, 68571711)
+Structure stats: SmartAVLTree (47756692, 45580508, 47756692)
+Structure stats: SmartPointerOriginal (39102701, 32935109, 39102701)
+Structure stats: SmartQueue (4171888, 3083796, 3083796)
+
+Max write batches: 16485719
+--------------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph roadNetPA_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9
+Running pagerank for 50 trial(s) with walk length 50 and damping factor 0.9
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(4408, 2204, 4, 1, 8.778584392014519)
+
+Post algorithm pagerank stats (201840553, 162124596, 158554086)
+Post pagerank structure stats:
+Structure stats: AddressQueue (110791638, 80507549, 68593263)
+Structure stats: SmartAVLTree (47762448, 45586264, 47762448)
+Structure stats: SmartPointerOriginal (39114579, 32946987, 39114579)
+Structure stats: SmartQueue (4171888, 3083796, 3083796)
+
+Max write batches: 6
+
+----- Finished test: roadNetPA_bs-4096_trials-50_pt-original_alg-pr_move-True_copies-False_prime-True_staticinsertion-True_wl-50_df-0.9 -----
+

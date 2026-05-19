@@ -1,0 +1,30 @@
+----- Running test: ER_n-131072_d-20_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+
+Graph from NetworkX: ER_n-131072_d-20_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+
+Allocs, Reads, Writes
+Pre build stats (0, 0, 0)
+Post build stats (3017255, 9312394, 10363598)
+Post build structure stats:
+Structure stats: RecursivePointer (1410866, 2097122, 2886182)
+Structure stats: SmartAVLTree (262132, 4591234, 4853378)
+Structure stats: SmartQueue (1344257, 2624038, 2624038)
+
+Max write batches: 3017254
+---------------------------------------------------------------------------------------------------------------------------------------
+Benchmarking Graph ER_n-131072_d-20_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True
+Running contact discovery for 50 trial(s)
+
+Access stats: ogV accesses, out tree accesses, avg ogV degree, avg out tree degree, avg ogV depth
+(100, 2037, 21, 1, 0.0)
+
+Post algorithm contact discovery stats (3017288, 9319810, 10368877)
+Post contact discovery structure stats:
+Structure stats: RecursivePointer (1410866, 2099259, 2886182)
+Structure stats: SmartAVLTree (262132, 4594476, 4856620)
+Structure stats: SmartQueue (1344290, 2626075, 2626075)
+
+Max write batches: 33
+
+----- Finished test: ER_n-131072_d-20_bs-4096_trials-50_pt-recursive_alg-cd_move-True_copies-False_prime-True_staticinsertion-True -----
+
