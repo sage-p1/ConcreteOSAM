@@ -52,7 +52,7 @@ def test_ograph(trials: int = 10, seed: int = 1) -> None:
                         avl_tree_osam=avl_tree_osam,
                         random_weight_min=None, 
                         random_weight_max=None, 
-                        sort_ids=False, 
+                        sort_names=False, 
                         ordered_dynamic_vertices=True
                     )
                     
@@ -144,7 +144,7 @@ def test_ograph_edge_deletion(fraction: float = 0.1, seed: int = 1) -> None:
                         avl_tree_osam=avl_tree_osam,
                         random_weight_min=None, 
                         random_weight_max=None, 
-                        sort_ids=False, 
+                        sort_names=False, 
                         ordered_dynamic_vertices=True
                     )
                     
@@ -242,7 +242,7 @@ def test_ograph_vertex_deletion(fraction: float = 0.5, seed: int = 1) -> None:
                         avl_tree_osam=avl_tree_osam,
                         random_weight_min=None, 
                         random_weight_max=None, 
-                        sort_ids=False, 
+                        sort_names=False, 
                         ordered_dynamic_vertices=True
                     )
 

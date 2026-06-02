@@ -112,6 +112,9 @@ class FanOut:
     """
     Corresponds to an edge (ogE) in the original graph
     May also be used to create an edge tree of internal FanOuts
+
+    The term ogE stands for "original edge" and was coined in
+    AHR24's paper introducing OSAM
     """
     def __init__(
             self, 
@@ -832,13 +835,14 @@ class OGraph:
             edges: List[Tuple[int | str, int | str, int]] | List[Tuple[int | str, int | str]] | None = None, 
             graph: DiGraph | Graph | None = None, 
             move_semantics: bool = True, 
-            sort_ids: bool = False
+            sort_names: bool = False
         ) -> None:
         """
         Creates an emulating graph based on a given original graph
         Can be initialized through a list of edges or a networkx graph
         Referred to as 'static building'
         Adds Vertex objects to the emulating graph
+        Edges are considered directed
         """
         assert edges is not None or graph is not None
 
@@ -857,24 +861,32 @@ class OGraph:
                 DG = DiGraph()
 
         # add edges to DiGraph
+        # edges are considered directed
         if isinstance(edges, list):
             weighted_edges: List[Tuple[int | str, int | str, int]] = []
-            weight = 0
             for edge in edges:
                 src = edge[0]
                 dst = edge[1]
                 if len(edge) == 3:
                     weight = edge[2]
+                else:
+                    weight = 0
+                weighted_edges.append((src, dst, weight))
             DG.add_weighted_edges_from(weighted_edges)
            
         # local storage for building
         v_ids: Dict[int | str, int] = dict()
         entry_points: Dict[int, SmartPointer] = dict()
 
-        if sort_ids:
+        if sort_names:
             nodes = sorted(list(DG.nodes))
         else:
             nodes = list(DG.nodes)
+
+        # create entry points
+        for v_name in nodes:
+            out_degree = len(list(DG.neighbors(v_name)))
+            self.add_vertex(v_name=v_name, v_ids=v_ids, entry_points=entry_points, out_degree=out_degree)
 
         if move_semantics:
             self.__emulate_graph(DG, v_ids, entry_points, nodes)
@@ -896,11 +908,6 @@ class OGraph:
             nodes: List[str] | List[int]
         ) -> None:
         """Connects each Vertex through pointers and FanOuts"""
-        # create entry points
-        for v_name in nodes:
-            out_degree = len(list(DG.neighbors(v_name)))
-            self.add_vertex(v_name=v_name, v_ids=v_ids, entry_points=entry_points, out_degree=out_degree)
-
         # build edge tree
         for src_name in DG.nodes:
             out_degree = len(list(DG.neighbors(src_name)))
@@ -963,11 +970,6 @@ class OGraph:
             nodes: List[str] | List[int]
         ) -> None:
         """Connects each Vertex through pointers and FanOuts"""
-        # create entry points
-        for v_name in nodes:
-            out_degree = len(list(DG.neighbors(v_name)))
-            self.add_vertex(v_name=v_name, v_ids=v_ids, entry_points=entry_points, out_degree=out_degree)
-
         # build edge tree
         for src_name in DG.nodes:
             out_degree = len(list(DG.neighbors(src_name)))
@@ -3085,10 +3087,14 @@ def build_from_edges(
         queue_osam: bool = True, 
         stack_osam: bool = True, 
         avl_tree_osam: bool = True, 
-        sort_ids: bool = True, 
+        sort_names: bool = True, 
         ordered_dynamic_vertices: bool = False
     ) -> OGraph:
-    """Build Oblvious Graph from a list of edge tuples (with optional weights)"""
+    """
+    Build Oblvious Graph from a list of edge tuples (with optional weights)
+    Edges are considered directed only
+    It is on the user to flip edges for bidirectionality
+    """
     # number of writes made during a graph phase
     reset_write_batches() 
 
@@ -3108,7 +3114,7 @@ def build_from_edges(
 
     if static_insertion: 
         # build graph knowing the entire graph structure
-        ograph.emulate_graph(edges=edges, move_semantics=move_semantics, sort_ids=sort_ids)
+        ograph.emulate_graph(edges=edges, move_semantics=move_semantics, sort_names=sort_names)
     else:
         # optionally sort vertex names so that vertex IDs are assigned in order
         if ordered_dynamic_vertices:
@@ -3158,7 +3164,7 @@ def build_from_networkx(
         avl_tree_osam: bool = True, 
         random_weight_min: int | None = None, 
         random_weight_max: int | None = None, 
-        sort_ids: bool = False, 
+        sort_names: bool = False, 
         ordered_dynamic_vertices: bool = False, 
     ) -> OGraph:
     """Build Oblvious Graph from networkx graph functions"""
@@ -3204,7 +3210,7 @@ def build_from_networkx(
     
     if static_insertion:
         # build graph knowing the entire graph structure
-        ograph.emulate_graph(graph=graph, move_semantics=move_semantics, sort_ids=sort_ids) 
+        ograph.emulate_graph(graph=graph, move_semantics=move_semantics, sort_names=sort_names) 
     else:
         # optionally sort vertex names so that vertex IDs are assigned in order
         if ordered_dynamic_vertices:

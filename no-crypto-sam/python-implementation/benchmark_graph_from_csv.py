@@ -62,7 +62,7 @@ def benchmark_graph_from_csv(
         avl_tree_osam=True, 
         random_weight_min=None, 
         random_weight_max=None, 
-        sort_ids=False, 
+        sort_names=False, 
         ordered_dynamic_vertices=False
     )
 
